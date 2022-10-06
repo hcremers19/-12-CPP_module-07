@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 17:29:16 by hcremers          #+#    #+#             */
-/*   Updated: 2022/10/03 13:35:56 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/10/06 14:48:28 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int	main()
 	for (size_t i = 0; i < b.size(); i++)
 		b[i] = (i + 1) * 2;
 
-	Array<int>	c(b);
+	Array<int>	c;
+	c = b;
 
 	std::cout << b[0] << std::endl;
 	std::cout << b[1] << std::endl;
