@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 13:22:40 by hcremers          #+#    #+#             */
-/*   Updated: 2022/10/04 17:04:54 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/11/09 11:47:16 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@
 template<typename T, typename U>
 void	iter(T* array, U size, void (*f)(const T&))
 {
-	for(U i = 0; i < size; i++)
-	{
+	for (U i = 0; i < size; i++)
 		(*f)(array[i]);
-	}
 }
 
 template<typename T>
